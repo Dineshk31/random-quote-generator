@@ -29,7 +29,6 @@
       const response = await fetch(url);
       const data = await response.json();
 
-      // The Advice Slip API returns advice under data.slip.advice
       quote.textContent = data.slip.advice;
       author.textContent = "Advice Slip API";
     }
